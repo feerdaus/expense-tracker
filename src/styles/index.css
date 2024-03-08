@@ -1,0 +1,61 @@
+@import url("./_btn.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: @apply custom;
+}
+
+.hoverEff {
+  @apply bg-faint;
+}
+
+.hoverEff:hover {
+  background-color: #29a599;
+}
+
+.gradient-bg {
+  background-image: linear-gradient(to right, #429690, #2a7c76);
+}
+
+.dark-bg {
+  background-image: radial-gradient(
+    #2f7e79 30%,
+    #2a7c76 20%,
+    #429690 10%,
+    #1b5c58 60%
+  );
+  /* background-image: linear-gradient(to right, #1b5c58, #2f7e79); */
+}
+.my-radius {
+  border-bottom-left-radius: 70% 90%;
+  border-bottom-right-radius: 70% 90%;
+  margin-bottom: -50px;
+}
+
+.bx-shadow {
+  box-shadow: 0 10px 20px rgba(27, 92, 88, 0.5);
+}
+
+.shadow-top {
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bgImg {
+  background-image: url("/bgBig.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgProfile {
+  background-image: url("/profilePic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

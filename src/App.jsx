@@ -1,10 +1,4 @@
-import LandingPage from "./components/LandingPage";
-
 const App = () => {
-  return (
-    <div className="bg-primary">
-      <LandingPage />
-    </div>
-  );
+  return <div className=""></div>;
 };
 export default App;
